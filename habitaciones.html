@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Grand Bajío</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- jQuery y Slick Slider (Plugin) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <!-- Barra de navegación hacia los otros sitios -->
+    <nav>
+        <div style="font-size: 1.5em; font-weight: bold; color: var(--accent);">Hotel Grand</div>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="habitaciones.html">Habitaciones</a>
+            <a href="contacto.html">Contacto</a>
+            <button id="btn-tema" class="btn">Tema</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="reloj-container" id="fecha-hora"></div>
+        <h1>Nuestras Habitaciones</h1>
+        <div class="grid">
+            <div class="card">
+                <h3>Habitación Estándar</h3>
+                <p>Cama King size, vista a la ciudad y Wi-Fi de alta velocidad.</p>
+                <p style="color: var(--accent); font-weight: bold;">$120 USD / noche</p>
+            </div>
+            <div class="card">
+                <h3>Suite Ejecutiva</h3>
+                <p>Espacio de trabajo, sala de estar y acceso al lounge exclusivo.</p>
+                <p style="color: var(--accent); font-weight: bold;">$250 USD / noche</p>
+            </div>
+            <div class="card">
+                <h3>Master Suite</h3>
+                <p>Jacuzzi privado, terraza panorámica y servicio de mayordomo.</p>
+                <p style="color: var(--accent); font-weight: bold;">$400 USD / noche</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Hotel Grand. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón Ir Arriba -->
+    <button id="btn-arriba">▲</button>
+    <script src="js/app.js"></script>
+</body>
+</html>

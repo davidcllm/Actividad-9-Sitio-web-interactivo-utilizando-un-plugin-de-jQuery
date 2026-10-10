@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Grand Bajío</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- jQuery y Slick Slider (Plugin) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+    <!-- Barra de navegación hacia los otros sitios -->
+    <nav>
+        <div style="font-size: 1.5em; font-weight: bold; color: var(--accent);">Hotel Grand</div>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="habitaciones.html">Habitaciones</a>
+            <a href="contacto.html">Contacto</a>
+            <button id="btn-tema" class="btn">Tema</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="reloj-container" id="fecha-hora"></div>
+        <h1>Contáctanos</h1>
+        
+        <form id="form-contacto" novalidate>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <div class="error-msg" id="err-nombre">Ingrese un nombre válido.</div>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <div class="error-msg" id="err-correo">Formato de correo inválido.</div>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+            <div class="error-msg" id="err-asunto">El asunto es obligatorio.</div>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            <div class="error-msg" id="err-mensaje">El mensaje debe tener al menos 10 caracteres.</div>
+
+            <button type="submit" class="btn">Enviar Solicitud</button>
+        </form>
+
+        <!-- Mapa de Google interactivo -->
+        <div class="mapa-container">
+            <h2>Nuestra Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661748255959!2d-99.1713478850934!3d19.427024486887556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02fb7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses-419!2smx!4v1680000000000!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Hotel Grand. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón Ir Arriba -->
+    <button id="btn-arriba">▲</button>
+    <script src="js/app.js"></script>
+</body>
+</html>
