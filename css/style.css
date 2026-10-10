@@ -1,0 +1,63 @@
+:root {
+    --bg-color: #f4f6f8;
+    --text-color: #2c3e50;
+    --nav-bg: #1a252f;
+    --nav-text: #ffffff;
+    --accent: #d4af37; /* Dorado hotel */
+    --card-bg: #ffffff;
+    --border: #bdc3c7;
+}
+
+/* Tema oscuro */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --nav-bg: #0a0a0a;
+    --nav-text: #d4af37;
+    --card-bg: #1e1e1e;
+    --border: #333333;
+}
+
+/* Estilos para la sección de body */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navegación y Footer */
+nav {
+    background-color: var(--nav-bg);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a { color: var(--nav-text); text-decoration: none; margin: 0 15px; font-weight: bold; }
+nav a:hover { color: var(--accent); }
+footer { background-color: var(--nav-bg); color: var(--nav-text); text-align: center; padding: 20px; margin-top: 40px; }
+
+/* Botones y Utilidades */
+.btn { background-color: var(--accent); color: #fff; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px; font-weight: bold; }
+.container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+.reloj-container { text-align: right; font-size: 0.9em; margin-bottom: 20px; color: var(--accent); font-weight: bold; }
+
+/* Botón Ir Arriba */
+#btn-arriba {
+    display: none; position: fixed; bottom: 20px; right: 20px;
+    background-color: var(--accent); color: white; border: none;
+    padding: 15px; border-radius: 50%; cursor: pointer; font-size: 1.2em;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); z-index: 1000;
+}
+
+/* Formulario y Mapa */
+form { display: flex; flex-direction: column; gap: 15px; background: var(--card-bg); padding: 20px; border-radius: 8px; border: 1px solid var(--border); }
+input, textarea { padding: 10px; border: 1px solid var(--border); border-radius: 4px; background: var(--bg-color); color: var(--text-color); }
+.error-msg { color: #e74c3c; font-size: 0.9em; display: none; margin-top: -10px; }
+.mapa-container iframe { width: 100%; height: 350px; border: none; border-radius: 8px; margin-top: 20px; }
+
+/* Grid de Habitaciones */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { background: var(--card-bg); padding: 20px; border: 1px solid var(--border); border-radius: 8px; text-align: center; }
